@@ -1,6 +1,7 @@
 import 'dart:io';
 
 void main() {
+  print("Enter your String: ");
   String? input = stdin.readLineSync();
   input = input == null ? "" : input;
 
