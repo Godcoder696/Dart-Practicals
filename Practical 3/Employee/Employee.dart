@@ -30,13 +30,12 @@ class Employee {
   int? get empSalary => this._empSalary;
 
   void printDetails() {
+    int? hike = allowances[empDept];
+    int? total = (_empSalary ?? 0) + ((int.parse("$hike")) * (_empSalary ?? 0));
     print(
         "$_name belongs to $_empDept with id: $_empId Current Salary: $_empSalary.");
-    int? hike = allowances[empDept];
-    // double total;
-    // if (hike != null) total = _empSalary + ((hike) * (_empSalary ?? 0));
-    // print(_empSalary is int);
-    print("Hike is: $hike %");
+
+    print("Hike is: $total");
   }
 
   Employee() {
