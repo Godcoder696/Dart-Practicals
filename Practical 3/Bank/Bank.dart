@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class Bank {
   String? name;
   int? accNum;
@@ -6,7 +8,7 @@ class Bank {
 
   Bank(String? name, [int? accNum, int? balance, String? type]) {
     this.name = name;
-    this.accNum = accNum ?? -1;
+    this.accNum = accNum ?? Random().nextInt(1000000) + 1000;
     this.balance = balance ?? 0;
     this.type = type ?? "user";
   }
