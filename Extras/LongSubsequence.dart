@@ -8,19 +8,27 @@ void main() {
   // input
   var input = [3, 1, 2, 4];
   int N = input.length;
+  var ans = [];
 
   int max = 1;
 
   for (int i = 0; i < N - 1; i++) {
     int count = 1, last = input[i];
+    var arr = [];
+    arr.add(last);
     for (int j = i + 1; j < N; j++) {
       if (last < input[j]) {
         count++;
         last = input[j];
+        arr.add(input[j]);
       }
     }
-    if (max < count) max = count;
+    if (max < count) {
+      max = count;
+      ans = arr;
+    }
   }
 
   print("Max length of subsequenece is: $max");
+  print(ans);
 }
