@@ -3,8 +3,8 @@
 // Input: ‘N’ = 4, ‘arr’ = [3, 1, 2, 4], 'K' = 6
 
 void main() {
-  var input = [3, 1, 2, 4];
-  int N = input.length, K = 6;
+  var input = [10, 20, 30, 40, 50];
+  int N = input.length, K = 50;
 
   // K is target
 
