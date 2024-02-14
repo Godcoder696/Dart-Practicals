@@ -26,6 +26,8 @@ class Car extends Vehicle {
       fare = 500;
     else if (model == "C") fare = 250;
 
+    fare = fare * hour;
+
     if (hour > 3) {
       print("Fine Added!");
       fare += 10000;

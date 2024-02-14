@@ -26,6 +26,8 @@ class Motorcycle extends Vehicle {
       fare = 250;
     else if (model == "C") fare = 100;
 
+    fare = fare * hour;
+
     if (hour > 3) {
       print("Fine Added!");
       fare += 10000;
